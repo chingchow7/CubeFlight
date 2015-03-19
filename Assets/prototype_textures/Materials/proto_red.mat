@@ -125,7 +125,7 @@ Material:
       data:
         first:
           name: _EmissionScaleUI
-        second: .100000001
+        second: .200000003
       data:
         first:
           name: _Mode
@@ -138,7 +138,7 @@ Material:
       data:
         first:
           name: _EmissionColor
-        second: {r: .0996078476, g: .00784313772, b: .0113725504, a: .100000001}
+        second: {r: .200000003, g: .0735294148, b: .0783936828, a: .200000003}
       data:
         first:
           name: _Color
@@ -150,7 +150,7 @@ Material:
       data:
         first:
           name: _EmissionColorUI
-        second: {r: .996078491, g: .0784313753, b: .113725498, a: 1}
+        second: {r: 1, g: .367647052, b: .391968399, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
