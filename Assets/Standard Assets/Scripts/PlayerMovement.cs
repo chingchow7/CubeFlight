@@ -33,9 +33,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Handle physics based on input
 	void FixedUpdate () {
-		x_speed = -1 * x_input * x_speed_mod;
+		x_speed = x_input * x_speed_mod;
 		y_speed = y_input * y_speed_mod;
 
-		transform.Translate( new Vector3( x_speed, 0, y_speed));
+		transform.Translate( new Vector3( x_speed, y_speed, 0));
 	}
 }
