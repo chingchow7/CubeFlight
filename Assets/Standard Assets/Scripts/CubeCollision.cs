@@ -12,9 +12,10 @@ public class CubeCollision : MonoBehaviour {
 	void Update () {
 	
 	}
+	
+	void OnTriggerEnter (Collider col) {
+		//Debug.Log ( " HIT TRIGGER " + col.gameObject.name);
 
-	void OnCollisionEnter (Collision col)
-	{
 		if(col.gameObject.tag == "Player")
 		{
 			Debug.Log ("HIT");
