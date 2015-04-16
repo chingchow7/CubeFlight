@@ -28,12 +28,12 @@ public class InputRotation : MonoBehaviour {
 	// handle rotation based on input
 	void FixedUpdate () {
 		x_angle = -1f * x_input * x_angle_max;
-		y_angle = 90f + -1f*(y_input * y_angle_max);
+		y_angle = -1f * y_input * y_angle_max;
 		
 		//transform.eulerAngles = new Vector3 ( y_angle, 0f, transform.rotation.z + x_angle_max);
-		//transform.rotation = Quaternion.Euler( y_angle, 0f, x_angle);
+		transform.rotation = Quaternion.Euler( y_angle, 0f, x_angle);
 
-		Quaternion target = Quaternion.Euler(y_angle, 0, x_angle);
-		transform.rotation = Quaternion.Slerp(transform.rotation, target, 5f);
+		//Quaternion target = Quaternion.Euler(y_angle, 0, x_angle);
+		//transform.rotation = Quaternion.Slerp(transform.rotation, target, 5f);
 	}
 }
